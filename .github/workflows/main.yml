@@ -21,7 +21,7 @@ jobs:
   # Deploy Job
   deploy:
     runs-on: ubuntu-latest
-    need: build
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
